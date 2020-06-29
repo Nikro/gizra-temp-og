@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.og_audience
     - image.style.large
     - node.type.article
   module:
@@ -60,4 +61,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  og_audience:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: true
+    weight: 111
+    third_party_settings: {  }
+    region: content
 hidden: {  }

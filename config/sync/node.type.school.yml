@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: School
 type: school
-description: ''
+description: 'School is a demo-content type - and guess what, people can JOIN schools, like groups ;D'
 help: ''
 new_revision: true
 preview_mode: 1

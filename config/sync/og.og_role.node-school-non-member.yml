@@ -1,0 +1,16 @@
+uuid: 96f1537f-1cf9-4cdb-afba-d521c0b6a803
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.school
+id: node-school-non-member
+label: Non-member
+weight: null
+is_admin: null
+group_type: node
+group_bundle: school
+group_id: null
+permissions:
+  - subscribe
+role_type: required

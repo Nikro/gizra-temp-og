@@ -1,0 +1,15 @@
+uuid: 7b019c2a-5f66-4bbc-90ac-269e3454d6a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.school
+id: node-school-administrator
+label: Administrator
+weight: 2
+is_admin: true
+group_type: node
+group_bundle: school
+group_id: null
+permissions: {  }
+role_type: null

@@ -1,0 +1,36 @@
+uuid: 6e5524a0-0765-4950-8131-517def0fe1fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - gizra_demo
+    - node
+    - user
+  theme:
+    - server_theme
+id: groupsubscribe
+theme: server_theme
+region: content
+weight: 0
+provider: null
+plugin: og_welcome_subscribe
+settings:
+  id: og_welcome_subscribe
+  label: 'Group Subscribe'
+  provider: gizra_demo
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      school: school
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

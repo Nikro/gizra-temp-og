@@ -1,0 +1,15 @@
+uuid: dd7b6eeb-363b-4cf1-b134-df3354cfa54d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.school
+id: node-school-member
+label: Member
+weight: 1
+is_admin: null
+group_type: node
+group_bundle: school
+group_id: null
+permissions: {  }
+role_type: required
