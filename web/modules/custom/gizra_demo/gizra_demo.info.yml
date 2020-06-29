@@ -3,3 +3,7 @@ type: module
 description: 'A small demo module to do the assignment.'
 core: '8.x'
 package: Gizra
+
+dependencies:
+  - drupal:node
+  - drupal:og
