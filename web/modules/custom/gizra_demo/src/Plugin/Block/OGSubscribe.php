@@ -3,6 +3,7 @@
 namespace Drupal\gizra_demo\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Cache\Cache;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountInterface;
@@ -114,10 +115,9 @@ class OGSubscribe extends BlockBase implements ContainerFactoryPluginInterface {
   /**
    * {@inheritdoc}
    */
-  public function getCacheMaxAge() {
-    // For now, let's skip caching.
-    // @todo: switch to contextual node-based caching.
-    return 0;
+  public function getCacheContexts() {
+    // And restrict the caching per general user context.
+    return Cache::mergeContexts(parent::getCacheContexts(), ['user', 'og_membership_state']);
   }
 
 }
